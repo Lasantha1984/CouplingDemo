@@ -13,10 +13,10 @@ public class TightCar {
 
     Engine engine;
 
-    public TightCar(Engine e) {
-        this.engine = e;
+    public TightCar() {
+        this.engine = new Engine();
         System.out.println("The car object is Tightly coupled with engine Object here,\n"
-                + " That's why engine is required when instantiating the car.");
+                + " That's why engine instantiate when instantiating the car.");
 
     }
 }

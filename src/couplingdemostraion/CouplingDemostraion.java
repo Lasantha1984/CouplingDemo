@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package couplingdemostraion;
 
 /**
@@ -18,11 +14,11 @@ public class CouplingDemostraion {
         Engine engine1 = new Engine();
         engine1.setCapasity(2000);
 //        Tightly couple example
-//        At the instanciation of the Car object engine is required.
-        TightCar tightCar = new TightCar(engine1);
-          
+//        At the instanciation of the Car object instantiate engine as well .
+        TightCar tightCar = new TightCar();
+     
 //        Loose couple example.
-//        At the instanciation of the Car object engine is not required.
+//        At the instanciation of the Car object engine is not instantiate.
 //        Engin can be set later.
         LooseCar looseCar = new LooseCar();
         looseCar.setEngine(engine1);
